@@ -40,7 +40,7 @@ function onClickGallery(e) {
 
   if (!(url && description)) return;
 
-  lightbox = basicLightBox.create(genBigImg({ url, description }), {
+  lightbox = basicLightbox.create(genBigImg({ url, description }), {
     onClose: () => {
       gallery.removeEventListener('keydown', onKeyDownEsc);
     },
